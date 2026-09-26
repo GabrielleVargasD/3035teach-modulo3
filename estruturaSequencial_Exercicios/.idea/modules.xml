@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../desafio_backend_Java/desafio_backend_Java.iml" filepath="$PROJECT_DIR$/../desafio_backend_Java/desafio_backend_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/estruturaSequencial_Exercicios.iml" filepath="$PROJECT_DIR$/estruturaSequencial_Exercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/../estrutura_Repeticao/estrutura_Repeticao.iml" filepath="$PROJECT_DIR$/../estrutura_Repeticao/estrutura_Repeticao.iml" />
       <module fileurl="file://$PROJECT_DIR$/../estrutura_condicional/estrutura_condicional.iml" filepath="$PROJECT_DIR$/../estrutura_condicional/estrutura_condicional.iml" />

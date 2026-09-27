@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         Menu menu = new Menu();
-        Jogo jogo = new Jogo();
-
+        Historico historico = new Historico();
+        Jogo jogo = new Jogo(historico);
         int opcao = 0;
 
         while (opcao != 4) {
@@ -18,7 +18,8 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("Mostrando histórico");
+                    System.out.println("Mostrando histórico...\n" + "=======================\n");
+                    historico.mostrarHistorico();
                     break;
 
                 case 4:

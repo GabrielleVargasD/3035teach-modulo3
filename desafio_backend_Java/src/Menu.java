@@ -35,8 +35,11 @@ public class Menu {
                         "- 5 tentativas\n" +
                         "- Pontuação base: 300 pontos\n\n" +
 
-                        "A cada tentativa utilizada, pontos são descontados.\n" +
-                        "Você também recebe 50 pontos para cada tentativa não utilizada.\n" +
+                        "Como funciona a pontuação:\n" +
+                        "- A cada tentativa utilizada, são descontados 5 pontos\n"+
+                        "- Para cada tentativa não utilizada, são adicionados 50 pontos\n"+
+                        "- Se você não acertar o número secreto, sua pontuação será 0 (zero) \n\n" +
+
                         "As 10 últimas pontuações serão armazenadas no histórico.\n"
         );
     }

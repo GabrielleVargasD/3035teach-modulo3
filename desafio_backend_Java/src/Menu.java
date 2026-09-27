@@ -43,4 +43,17 @@ public class Menu {
                         "As 10 últimas pontuações serão armazenadas no histórico.\n"
         );
     }
+
+    public int mostrarMenuDicas() {
+        System.out.println(
+                "\n===== DICAS =====\n" +
+                        "(1) Dica de paridade (-10 pontos)\n" +
+                        "(2) Dica de intervalo (-20 pontos)\n" +
+                        "(3) Dica de proximidade (-15 pontos)\n" +
+                        "(4) Voltar\n"
+        );
+
+        int escolha = teclado.nextInt();
+        return escolha;
+    }
 }

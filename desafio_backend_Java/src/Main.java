@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         Menu menu = new Menu();
         Historico historico = new Historico();
-        Jogo jogo = new Jogo(historico);
+        Jogo jogo = new Jogo(historico, menu);
         int opcao = 0;
 
         while (opcao != 4) {

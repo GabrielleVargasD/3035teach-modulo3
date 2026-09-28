@@ -20,6 +20,7 @@ public class Main {
                 case 3:
                     System.out.println("Mostrando histórico...\n" + "=======================\n");
                     historico.mostrarHistorico();
+                    historico.mostrarRecordes();
                     break;
 
                 case 4:

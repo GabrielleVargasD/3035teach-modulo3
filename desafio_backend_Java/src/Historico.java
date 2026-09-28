@@ -2,8 +2,22 @@ public class Historico {
     int[] pontuacoes = new int[10];
     String[] dificuldades = new String[10];
     int quantidade = 0;
+    int[] recordes = {0, 0, 0};
 
     public void adicionarPontuacao(int pontuacao, String dificuldade){
+        int indiceDificuldade;
+
+        if (dificuldade.equals("Fácil")) {
+            indiceDificuldade = 0;
+        } else if (dificuldade.equals("Médio")) {
+            indiceDificuldade = 1;
+        } else {
+            indiceDificuldade = 2;
+        }
+
+        if (pontuacao > recordes[indiceDificuldade]) {
+            recordes[indiceDificuldade] = pontuacao;
+        }
 
         if (quantidade < 10) {
             pontuacoes[quantidade] = pontuacao;
@@ -33,4 +47,10 @@ public class Historico {
         }
     }
 
+    public void mostrarRecordes() {
+        System.out.println("===== RECORDES =====");
+        System.out.println("Fácil: " + recordes[0] + " pontos");
+        System.out.println("Médio: " + recordes[1] + " pontos");
+        System.out.println("Difícil: " + recordes[2] + " pontos\n");
+    }
 }
